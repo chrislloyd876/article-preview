@@ -1,0 +1,30 @@
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    max-width: 800px;
+    max-height: auto;
+}
+
+.article{
+    display: flex;
+    max-width: 60rem;
+    border-radius: 15px;
+    max-height: 250px;
+}
+
+.container img{
+   object-fit: cover;
+   width: 100%;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
