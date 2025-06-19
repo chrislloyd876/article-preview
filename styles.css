@@ -4,10 +4,11 @@ body{
     display: grid;
     place-items: center;
     background-color:  hsl(210, 46%, 95%);
+    font-family: "Manrope";
 }
 
 main{
-    max-width: 800px;
+    max-width: 700px;
     max-height: auto;
 }
 
@@ -30,8 +31,56 @@ main{
 .content{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
 }
 
+p, h2{
+    margin-top: 0;
+}
+
+h2, #name{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+p, #date{
+    color:hsl(214, 17%, 51%);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side{
+    display: flex;
+    gap: 10px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#avatar-michelle{
+    border-radius: 50%;
+    max-width: 15%;
+    height: 50%;
+}
+
+#share-btn{
+    border-radius: 50%;
+    width: auto;
+    height: 65%;
+    border: none;
+    color: hsl(212, 23%, 69%);
+}
 
 .attribution { 
     font-size: 11px; 
