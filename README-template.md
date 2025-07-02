@@ -69,9 +69,28 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+Learned a bit on how to create a popup from w3Schools How To section. Might have to do further research into animation.
+
+.menu::after{
+    position: absolute;
 }
+
+.menu.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 ```
 ```js
 const proudOfThisFunc = () => {

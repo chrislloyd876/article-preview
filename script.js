@@ -1,6 +1,6 @@
 const button = document.querySelector('button');
 
-button.addEventListener('click', (event) => {
-    console.log(event.target);
-    console.log(event.currentTarget);
+button.addEventListener('click', () => {
+    const menu = document.querySelector('#menu');
+    menu.classList.toggle('show');
 });

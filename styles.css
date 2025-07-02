@@ -79,6 +79,9 @@ ul{
     height: 100%;
     border: none;
     color: hsl(212, 23%, 69%);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .attribution { 
@@ -93,8 +96,13 @@ ul{
     position: relative;
     height: 60%;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .menu{
+    visibility: hidden;
     background-color: hsl(217, 19%, 35%);
     display: flex;
     gap: 1rem;
@@ -102,11 +110,31 @@ ul{
     padding: 1em;
     border-radius: 7%;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    display: none;
+    z-index: 1;
+    bottom: 125%;
 }
 
+
+.menu::after{
+    position: absolute;
+}
+
+.menu.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 
 @media screen and (max-width: 28.12rem){
     .article{
