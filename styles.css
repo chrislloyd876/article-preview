@@ -125,7 +125,7 @@ ul{
     animation: fadeIn 1s
   }
   
-  /* Add animation (fade in the popup) */
+  Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -144,5 +144,13 @@ ul{
 
     main{
         height: auto;
+    }
+
+    .menu{
+        scale: 1.4;
+        position: absolute;
+        right: 5em;
+        bottom: 0;
+        height: 65%;
     }
 }
