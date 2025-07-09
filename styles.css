@@ -149,8 +149,13 @@ ul{
     .menu{
         scale: 1.4;
         position: absolute;
-        right: 5em;
+        right: 7em;
         bottom: 0;
         height: 65%;
+        justify-content: space-between;
+    }
+    
+    .menu.show p {
+        margin: 0;
     }
 }
